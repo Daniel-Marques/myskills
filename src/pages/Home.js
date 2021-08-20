@@ -6,6 +6,7 @@ import {
   TextInput,
   Platform,
   FlatList,
+  StatusBar,
 } from 'react-native';
 
 import { Button } from '../components/Button';
@@ -34,6 +35,8 @@ export function Home() {
 
   return (
     <View style={styles.container}>
+      <StatusBar barStyle="light-content" />
+
       <Text style={styles.title}>Welcome, Daniel</Text>
 
       <Text style={styles.saudation}>{gretting}</Text>
